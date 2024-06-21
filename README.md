@@ -36,6 +36,12 @@ This project visualizes different sorting algorithms using a graphical interface
 - Use the `Pause` button to pause the visualization and `Resume` to continue.
 - Use the `Reset` button to clear the visualizations and choose a different algorithm.
 
+## Video Demonstration
+
+[![Algorithm Visualizer Demo Video](https://img.youtube.com/vi/j2KCeqPmD_g/0.jpg)](https://www.youtube.com/watch?v=j2KCeqPmD_g)
+
+Click the image above to watch a demo of the Algorithm Visualizer in action.
+
 ## Algorithms Supported
 
 The application supports the following sorting algorithms:
