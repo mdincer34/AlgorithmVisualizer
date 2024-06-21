@@ -19,7 +19,7 @@ This project visualizes different sorting algorithms using a graphical interface
 2. **Clone the Repository:**
    - Open a terminal in the directory where you want to clone the project and run:
      ```bash
-     git clone https://github.com/yourusername/algorithm-visualizer.git
+     git clone https://github.com/mdincer34/AlgorithmVisualizer.git
      ```
 
 3. **Run the Project:**
