@@ -1,0 +1,98 @@
+<Window
+    x:Class="AlgorithmVisualizer.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Algorithm Visualizer"
+    Width="800"
+    Height="600"
+    Background="Black"
+    Opacity="100">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<TextBlock
+            x:Name="TimerTextBlock"
+            Grid.Row="0"
+            Margin="10"
+            HorizontalAlignment="Center"
+            Foreground="AntiqueWhite"
+            Text="Elapsed Time: 00:00:00" />
+
+		<ComboBox
+            x:Name="AlgorithmSelector"
+            Grid.Row="1"
+            Width="200"
+            Margin="10"
+            SelectedIndex="4">
+			<ComboBoxItem>Insertion Sort</ComboBoxItem>
+			<ComboBoxItem>Selection Sort</ComboBoxItem>
+			<ComboBoxItem>Bubble Sort</ComboBoxItem>
+			<ComboBoxItem>Merge Sort</ComboBoxItem>
+			<ComboBoxItem>Quick Sort</ComboBoxItem>
+		</ComboBox>
+
+		<Canvas
+            x:Name="VisualizationCanvas"
+            Grid.Row="2"
+            Margin="10"
+            Background="Black"
+            Opacity="100" />
+
+
+		<StackPanel
+            Grid.Row="3"
+            Margin="10"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+			<Button
+                x:Name="StartButton"
+                Margin="5"
+                Background="Transparent"
+                BorderBrush="AntiqueWhite"
+                Content="Start"
+                Foreground="AntiqueWhite" />
+			<!--<Button
+                x:Name="PauseButton"
+                Margin="5"
+                Background="Transparent"
+                BorderBrush="AntiqueWhite"
+                Content="Pause"
+                Foreground="AntiqueWhite" />
+			<Button
+                x:Name="ResetButton"
+                Margin="5"
+                Background="Transparent"
+                BorderBrush="AntiqueWhite"
+                Content="Reset"
+                Foreground="AntiqueWhite" />-->
+		</StackPanel>
+
+		<TextBlock
+            x:Name="DescriptionTextBlock"
+            Grid.Row="4"
+            Margin="10"
+            Foreground="AntiqueWhite"
+            Text="Select an algorithm to visualize." />
+		<ToggleSwitch
+            x:Name="ToggleAllAlgos"
+            Grid.Row="4"
+            Margin="10"
+            HorizontalAlignment="Right"
+            Background="Transparent"
+            BorderBrush="AntiqueWhite"
+            Checked="AllAlgorithmsWindow_Checked"
+            Content="Visualize All"
+            Foreground="AntiqueWhite" />
+	</Grid>
+</Window>
